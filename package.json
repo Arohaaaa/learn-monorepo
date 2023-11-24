@@ -9,7 +9,7 @@
         "@typescript-eslint/eslint-plugin": "^6.12.0",
         "@typescript-eslint/parser": "^6.12.0",
         "commitizen": "^4.3.0",
-        "cz-conventional-changelog": "^3.3.0",
+        "cz-customizable": "^7.0.0",
         "eslint": "^8.54.0",
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-prettier": "^5.0.1",
@@ -24,5 +24,10 @@
         "lint": "eslint ./ --ext .ts,.js,.json --max-warnings=0",
         "format": "prettier --config .prettierrc \".\" --write",
         "cz": "cz"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-customizable"
+        }
     }
 }
