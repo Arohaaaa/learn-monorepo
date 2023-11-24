@@ -13,9 +13,26 @@
         // 该配置集是typescript-eslint的推荐，它与eslint:recommanded相似，但它启用了特定于ts的规则
         "plugin:@typescript-eslint/recommended",
         // 该配置集禁用eslint-recommanded配置集中已经由typescript处理的规则，防止eslint和typescript之间的冲突
-        "plugin:@typescript-eslint/eslint-recommended"
+        "plugin:@typescript-eslint/eslint-recommended",
+
+        // 即eslint-config-prettier，关闭所有可能干扰prettier规则的ESlint规则，确保将其放在最后，这样它有机会覆盖其它配置集
+        "prettier"
     ],
 
-    // 该配置项指示要加载的插件，这里的插件使得我们能在存储库中使用typescript-eslint包定义的规则集
-    "plugins": ["@typescript-eslint"]
+    // 该配置项指示要加载的插件
+    "plugins": [
+        // 这里的插件使得我们能在存储库中使用typescript-eslint包定义的规则集
+        "@typescript-eslint",
+        // 即eslint-plugin-prettier，将prettier规则转换为ESlint规则
+        "prettier"
+    ],
+
+    "rules": {
+        // 打开prettier插件提供的规则，该插件从ESlint内运行prettier
+        "prettier/prettier": "error",
+
+        // 关闭这两个关闭，这两个规则和prettier插件一起使用会出现问题
+        "arrow-body-style": "off",
+        "prefer-arrow-callback": "off"
+    }
 }
