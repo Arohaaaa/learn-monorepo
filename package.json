@@ -1,6 +1,6 @@
 {
   "name": "learn-monorepo",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "这是一个用来学习使用monorepo的仓库",
   "devDependencies": {
     "@types/node": "^20.9.5",

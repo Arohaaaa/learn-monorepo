@@ -1,1 +1,6 @@
-{}
+{
+    "name": "@learn-monorepo/utils",
+    "version": "0.1.0",
+    "description": "local utils package",
+    "main": "./src/index.ts"
+}

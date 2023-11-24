@@ -1,1 +1,7 @@
-{}
+{
+    "name": "@learn-monorepo/example-app",
+    "version": "0.1.0",
+    "dependencies": {
+        "@learn-monorepo/utils": "workspace:^"
+    }
+}

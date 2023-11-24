@@ -18,7 +18,11 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
 
-  apps/example-app: {}
+  apps/example-app:
+    dependencies:
+      '@learn-monorepo/utils':
+        specifier: workspace:^
+        version: link:../../packages/utils
 
   packages/ui: {}
 
