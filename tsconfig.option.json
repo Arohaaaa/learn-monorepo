@@ -3,7 +3,7 @@
         "composite": true,
         "incremental": true,
         // 这几项配置与typescript的Project References，tsc的--build模式有关
-        
+
         "declaration": true,
         "declarationMap": true,
         "emitDeclarationOnly": true,

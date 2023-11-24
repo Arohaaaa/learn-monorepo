@@ -1,8 +1,8 @@
-import { add } from '@learn-monorepo/utils'
+import { add } from '@learn-monorepo/utils';
 
 function main() {
-    const num = add(1, 2)
-    console.log(`output->num`,num)
+    const num = add(1, 2);
+    console.log(`output->num`, num);
 }
 
 main();
